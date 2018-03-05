@@ -1,0 +1,35 @@
+body {
+	font-family: arial;
+	color: black;
+	font-size: 16px;
+}
+header {
+	text-align: center;
+	background-color: gray;
+}
+
+h1 {
+	font-family: Georgia;
+	color: blue;
+	font-weight: bold;
+	font-size:	24px;
+	letter-spacing: 1.6em;
+	word-spacing: 2em;
+}
+h2 { 
+	font-family: Georgia;
+	color: darkred;
+	font-size:	18px;
+	letter-spacing: 1.4em;
+}
+
+
+.date {
+	font-weight: bold;
+	padding-right: 50px;
+	width: 100px;
+}
+.description {
+	text-align: left;
+	font-weight: normal;
+}

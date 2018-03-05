@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mainApp">
+<head>
+	<meta charset="utf-8">
+
+	<title>Angular JS | Exercises index</title>
+	<!-- scripts -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+	<script src="scripts/vendor/angular-route.min.js"></script>
+	<script src="scripts/app.js"></script>
+	<script src="views/examples/orderFrom/orderFromController.js"></script>
+	<script src="views/examples/toDoList/toDoController.js"></script>
+	<script src="views/examples/shopCart/shopCartController.js"></script>
+	<script src="scripts/styleDirective.js"></script>
+
+	<link href="styles/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles/index/index.css">
+	
+	
+</head>
+<body >
+
+<div class="container">
+	<nav class="navbar navbar-default"  style="text-align: center;">
+		
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav" style="align-items: center;">
+
+				<li>
+				<a href="#!/home">Angular JS | home </a>
+				
+				</li>
+
+				<li>
+					<a class="angularLogo" href="https://angularjs.org/"><img src="views/home/img/logo.jpg" ></a>
+				</li>
+
+				<li><a href="#!/Learning">Read me first!</a></li>
+
+				<li class="dropdown"> 
+					<a href="dontRedirect()" class="dropdown-toggle" data-toggle="dropdown">Examples<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#!/ExerciseOrderFrom">Order From</a></li>
+
+						<li><a href="#!/ExerciseShopCart">Shopping Cart</a></li>
+
+						<li><a href="#!/ExerciseToDoList">To Do List</a></li>
+
+					</ul>
+				</li>
+
+				<li><a href="#!/ExerciseContactsList">Exercises</a></li>
+
+			</ul>
+		</div>
+	
+	</nav>
+
+	<br>
+	<div ng-view></div>
+
+	
+	<br>
+	<hr class="style1">
+
+	<footer class="footer">
+		<div class="container">
+			<span class="text-muted">
+				Groupe HN - AngularJS elearning course
+			</span>
+		</div>
+		
+	</footer>
+
+</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="scripts/vendor/bootstrap.min.js"></script>
+
+	<script>
+		function dontRedirect() {
+			event.preventDefault();
+		}
+	</script>
+</body>
+</html>

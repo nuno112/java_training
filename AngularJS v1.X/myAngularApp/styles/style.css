@@ -1,0 +1,179 @@
+#navbar .navbar-nav {
+	display: inline-block;
+}
+
+#navbar .navbar-nav>li {
+	display: inline-block;
+	margin: 0 10px 0 10px;
+}
+
+#services {
+	max-width: 600px;
+	background-color: #7E9DF6;
+	border: 10px solid #7E9DF6;
+	border-radius: 10px;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+#services li {
+	text-align: center;
+	cursor: pointer;
+	list-style-type: none;
+	line-height: 0.75em;
+	margin: 1em;
+	padding: 10px 10px 0 10px;
+	border: 5px solid #E48787;
+	border-radius: 10px; 
+}
+
+#services span  {
+	float: right;
+	margin-right: 10%;
+}
+
+.btn-list {
+	background:#F58B35 center center no-repeat;
+	text-decoration: none;
+	cursor: pointer;
+	display:inline-block;
+	width: 70px;
+	height: 70px;
+	background-image: url(list.png);
+}
+
+.btn-grid {
+	background:#F58B35  center center no-repeat;
+	text-decoration: none;
+	cursor: pointer;
+	display:inline-block;
+	width: 70px;
+	height: 70px;
+	background-image: url(grid.png);
+}
+
+#cart li{
+	list-style-type: none;
+	padding-top: 10px;
+}
+
+#cart {
+	padding: 15px;
+	border: 2px solid #F58B35;
+	border-radius: 10px; 
+	line-height: 5px;
+}
+
+#cart .btn-clear {
+	float: right;
+}
+
+#cart label {
+	margin: 2px;
+	padding-top: 14px;
+	text-align: center;
+	width: 30px;
+	height: 33px;
+	background-color: #F09C52
+}
+
+#list li{
+	cursor: pointer;
+	margin: 3px;
+	padding: 15px 10px 15px 10px;
+	list-style-type: none;
+	line-height: 4px;
+	border: 2px solid #F58B35;
+	border-radius: 10px;
+
+}
+
+#icons li{
+	text-align: center;
+	display: inline-block;
+	cursor: pointer;
+	margin: 3px;
+	list-style-type: none;
+	line-height: 1em;
+	border: 2px solid #F58B35;
+	border-radius: 10px; 
+  	width: 30%;
+}
+
+#icons p {
+	margin: 1px;
+}
+
+#icons img {
+	display: inline-block;
+}
+
+.tasks li {
+	font-weight: bold;
+	list-style: none;
+	margin: 5px;
+	padding: 10px;
+	border: 2px solid #8AE977;
+	border-radius: 10px;
+}
+
+.tasks>button {
+	color: red;
+	float: right;
+	background: none;
+	height: 20px;
+}
+
+.tasks input[type="checkbox"] {
+    width:20px;
+    height:20px;
+}
+
+.tasks .done-true {
+	color: green;
+	text-decoration: line-through;
+}
+
+.bar .dropdown {
+	margin: 0;
+	padding:0;
+	display: inline-block;
+	list-style: none;
+	background-color: #5F804B;
+	border-radius: 5px;
+}
+
+.bar .dropdown-toggle {
+	text-decoration: none;
+	color:white;
+}
+
+.contacts li {
+	padding: 5px;
+	margin: 5px;
+	list-style: none;
+	border: 2px solid #5F804B;
+	border-radius: 5px;
+}
+
+.contacts button {
+	position: relative;
+	margin: 0 auto;
+}
+
+.contacts input[type="text"] {
+	margin: 2px 0 2px 2px;
+	padding: 2px 0 2px 2px;
+}
+
+
+.contacts .input button {
+	left: 0;
+}
+
+.contacts input[type="checkbox"] {
+	position: relative;
+	width: 20px;
+	height: 20px;
+	top: 35%;
+}

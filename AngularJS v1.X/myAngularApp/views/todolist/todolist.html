@@ -1,0 +1,22 @@
+<div class="container">
+	<h2>Task List</h2>
+		<button class="btn" ng-click="switchMode()">Switch Mode</button>
+		<input type="text" ng-model="task" ng-keyup ="filterUpdate()" ng-keypress="checkEnter()" placeholder="Type here your task">
+		<label>You are now in "{{mode}}" Mode.</label>
+		<p>Click the button to toggle the input box behaviour between 'Add Task Mode' and 'Filter Task Mode'.</p>
+	<ul class="tasks">
+		<li ng-repeat="task in tasks | filter: {task: taskFilter} track by $index" ng-hide="task.filtered" >
+			<input type="checkbox" ng-model="task.done" ng-change = "checkDone($index)">
+			<span class="done-{{task.done}}">{{task.task}}</span>
+			<button class="btn" ng-click="deleteTask($index)">X</button>
+		</li>
+	</ul>
+	<br>
+	<div>
+		<p>{{tasksDone}} items left!</p>
+		<button class="btn" ng-click="showAll()">All</button>
+		<button class="btn" ng-click="showActive()">Active</button>
+		<button class="btn" ng-click="showCompleted()">Completed</button>
+		<button class="btn" ng-click="deleteCompleted()">Delete Completed</button>
+	</div>
+</div>

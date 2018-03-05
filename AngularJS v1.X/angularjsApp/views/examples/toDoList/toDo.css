@@ -1,0 +1,75 @@
+ul{
+	list-style: none;
+}
+h1{
+	color: #666666;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.list-group-item{
+		width:60%;
+		margin-left: 20%;
+}
+li{
+	border-color: #006080 !important;
+}
+p{
+   	margin: 0;
+   	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.checkbox-round {
+	width: 1.3em;
+	height: 1.3em;
+	background-color: white;
+	border-radius: 50%;
+	vertical-align: middle;
+	border: 1px solid #ddd;
+	-webkit-appearance: none;
+	margin: 0px;
+	outline: none;
+    cursor: pointer;
+}
+.checkbox-round:checked {
+	background-color: #00ace6;
+}
+.checkbox-round:focus; ..checkbox-round:active {
+	outline: 0;
+}
+span.done-true {
+	color: #00ace6;
+	font-style: italic;
+	text-decoration: line-through;
+}
+span[contenteditable="true"] {
+	padding: 7px;
+	width: 75%;
+	border: #ddd;
+	border-radius: 5px;
+}
+.well {
+    background-color: #006080;
+}
+.col-md-3 {
+    color: white;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.btn-default {
+	color: white;
+    background-color: #00ace6;
+    border-color: #006080;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.btn-default:hover {
+    color: white;
+    background-color: #006080;
+    border-color: #00ace6;
+}
+.btn-default:focus {
+    color: white;
+    background-color: #006080;
+    border-color: #00ace6;
+}
+.btn-default:active {
+	color: white !important;
+	background-color: #00ace6 !important;
+	border-color:#006080 !important;
+}

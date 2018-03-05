@@ -1,0 +1,49 @@
+[draggable] {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -khtml-user-drag: element;
+    -webkit-user-drag: element;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    font-size: 2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.list {
+    margin-top: 10%;
+    min-width: 150px;
+    width: 30%;
+    float: left;
+    color: lightcoral;
+}
+
+.number{
+    border: 2px solid lightcoral;
+    margin: 10px 0 10px 0;
+    width: 50%;
+    background-color: aqua;
+    list-style-type: none;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: center;
+    cursor: move;
+}
+
+.scoreboard {
+    margin-left: 45%;
+    width: 150px;
+    height: 80px;
+    background-color: aqua;
+    color: lightcoral;
+    border-radius: 30px;
+}
+
+.scoreboard p {
+    margin:0;
+    padding: 0.5em;
+}

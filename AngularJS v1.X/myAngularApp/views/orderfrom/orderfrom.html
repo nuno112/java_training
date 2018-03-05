@@ -1,0 +1,23 @@
+<div class="container" id="services">
+	<h1 class="text-center">Services</h1>
+	<ul>
+		<li ng-click="change(0)">
+			<p>Tutorials development</p>
+			<p>$500.00</p>
+		</li>
+		<li ng-click="change(1)">
+			<p>Tutorials design</p>
+			<p>$300.00</p>
+		</li>
+		<li ng-click="change(2)">
+			<p>Code Integration</p>
+			<p>$250.00</p>
+		</li>
+		<li ng-click="change(3)">
+			<p>Training</p>
+			<p>$220.00</p>
+		</li>
+	</ul>
+	<p style="display: inline; margin-left: 20%" >Total:</p>
+	<span>{{ total | currency }}</span>
+</div>

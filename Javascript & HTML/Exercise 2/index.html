@@ -1,0 +1,31 @@
+<!DOCUMENT html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="script.js"></script>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h3>Select your ice cream toppings!</h3>
+            <p>Select at most 3 toppings.</p>
+            <p>Strawberry syrup and caramel sauce cannot both be chosen (too messy!)</p>
+            <form id="form" onsubmit="return init()">
+                <input type="checkbox" id="sprinkles" value="on" onchange="maxTopping(); messy()">
+                <label>Sprinkles</label><br>
+                <input type="checkbox" id="chocolate_chips" value="on" onchange="maxTopping(); messy()">
+                <label>Chocolate Chips</label><br>
+                <input type="checkbox" id="strawberry_syrup" value="on" onchange="maxTopping(); messy()">
+                <label>Strawberry Syrup</label><br>
+                <input type="checkbox" id="banana_flakes" value="on" onchange="maxTopping(); messy()">
+                <label>Banana Flakes</label><br>
+                <input type="checkbox" id="caramel_sauce" value="on" onchange="maxTopping(); messy()">
+                <label>Caramel Sauce</label><br>              
+                <input type="submit" id="submit">
+            </form>
+            <div id="rekt">
+                <label id="warnings"></label>
+            </div>
+        </div>
+    </body>
+</html>

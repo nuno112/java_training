@@ -1,0 +1,23 @@
+<div class="container">
+	<form>
+		<h2>Services</h2>
+
+			<ul>
+				<li ng-repeat="service in services"
+					ng-click="changeStatus($index)"
+					ng-class="{'active':service.status}">
+
+					{{service.name}}<br>
+					{{service.price | currency}}
+						
+				</li>
+			</ul>
+
+		<div class="total">
+
+			Total: <span>{{total() | currency}}</span> 
+
+		</div>
+		
+	</form>
+</div>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--João Nuno Costa  feb 2018-->
+<html>
+  <head>
+    <meta charset="utf-8">
+	<title>Contacts</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+  </head>
+  <body>
+	<header>
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" role = "navigation">
+			<div class = "navbar-header">
+				<a class = "navbar-brand" href = "index.html"><img style="width: 100px; height: 100px"src="images/logo.png"></a>
+			</div>
+			<div>
+				<ul class = "nav navbar-nav">
+					<li class = "active">
+						<a href="index.html" class="nav-link">Home</a>
+					<li class="dropdown">
+						<a href="#" class = "dropdown-toggle nav-link" data-toggle = "dropdown">Services<span class = "caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="web_dev.html">Web Development</a></li>
+							<li><a href="seo.html">SEO</a></li>
+						</ul>
+					</li>
+					<li><a href="about.html" class="nav-link">About</a></li>
+					<li><a href="mission.html" class="nav-link">Company Mission</a></li>
+					<li><a href="contacts.html" class="nav-link">Contacts</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<main>
+		<div class="box">
+			<img class="img-fluid" src="images/contacts.jpeg">
+		</div>
+		<div class="container p-1">
+			<address class="info">
+				<h4><strong>MyBestCompany</strong></h4>
+				<h5>1337 Best Street </h5>
+				<h5>CodeLand, Mars 666</h5>
+				<h5>Phone: 1800-420</h5>
+			</address>
+			<br>
+			<address>
+				<h4><strong>The Chosen One</strong></h4>
+				<h5><a href="mailto:#">mybestcompany@com.com</a></h5>
+			</address>
+		</div>
+		<h2 class="text-center">Contact us through this Form!</h2>
+		<div class="container">
+			<div class="alert alert-info">
+				<a href="#" class="close" data-dismiss="alert">&times;</a>
+				<p>Please fill all the information.</p>
+			</div>
+			<form class="form" action="http://37.71.185.235:20003/html/infospost.php" method="POST">
+				<div class="form-group">
+					<label for="Name:">Name:</label>
+					<input type="name" class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="Email:">Email:</label>
+					<input type="email" class="form-control" required>
+				</div>
+				<div class="form-group">
+					<label for="Message:">Message:</label>
+					<textarea type="text" class="form-control" required rows="4"></textarea>
+				</div>
+				<button type="submit" class="btn btn-default">Send message</button>
+			</form>
+		</div>
+	</main>
+	<br>
+	<br>
+	<footer class="footer text-center">
+		<p>(c) Copyright MyBestCompany 2018</p>
+	</footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".close").click(function(){
+				$("#myAlert").alert();
+			});
+		});  
+	</script>
+</body>
+</html>

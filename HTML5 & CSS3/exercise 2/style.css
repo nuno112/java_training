@@ -1,0 +1,63 @@
+body {
+	font-family: arial;
+}
+header {
+	text-align: center;
+}
+
+header h1 {
+	display:inline;
+}
+
+#logo {
+	width: 200px;
+	height: 100px;
+	
+}
+
+nav {
+	margin-top: 50px;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+nav ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+	display: inline;
+	padding: 50px;
+
+}
+
+#content {
+	margin-top: 50px;
+}
+
+#news {
+	float: left;
+	overflow: hidden;
+	margin-left: 40%;
+	border-right: 2px solid blue;
+	padding-right: 5%;
+}
+
+#announcements {
+
+	overflow: hidden;
+	padding-left: 5%;
+}
+
+article {
+	margin-bottom: 50px;
+}
+
+article p {
+	line-height: 1;s
+}
+footer {
+	text-align: center;
+}

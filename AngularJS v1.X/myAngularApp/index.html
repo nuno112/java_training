@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Angular JS | Exercises index</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="styles/style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+	<script src="scripts/app.js"></script>
+	<script src="views/orderfrom/orderfrom.js"></script>
+	<script src="views/todolist/todo.js"></script>
+	<script src="views/shoppingcart/shopcart.js"></script>
+	<script src="views/contactslist/contactslist.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+</head>
+<body ng-app="app">
+
+	<div class="container">
+		<nav class="navbar navbar-light bg-faded navbar-expand-md fixed-top" id="navbar">
+			<div>
+				<ul class="nav navbar-nav" >
+					<li class="nav-item"><a class="nav-link"  href="#!/Home">Home</a></li>
+					<li class="dropdown nav-item"> 
+						<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Angular Apps<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#!/OrderFrom">Order From</a></li>
+							<li><a class="dropdown-item" href="#!/ShoppingCart">Shopping Cart</a></li>
+							<li><a class="dropdown-item" href="#!/ToDoList">To Do List</a></li>
+						</ul>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="#!/ContactsList">Contacts List</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<br>
+	<br>
+	<br>
+	<div ng-view></div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

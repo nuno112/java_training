@@ -1,0 +1,95 @@
+<div class="shopCart">
+	<div class="bar">
+
+		<a class="list-icon" ng-class="{active: layout == 'list'}" ng-click="layout = 'list'"></a>
+
+		<a class="grid-icon" ng-class="{active: layout == 'grid'}" ng-click="layout = 'grid'"></a>
+
+	</div>
+
+	<div ng-show="layout == 'list'"  class="form3"> 
+		<form >
+
+			<h2 style="text-align: center"> Services </h2>
+
+			<ul >
+				<li ng-repeat="service in services" ng-click="counter(service)" ng-class="{active:service.active}">
+
+					 {{ service.name }} <span class="priceSpan">Price: {{ service.value | currency}}</span>
+
+				</li>
+			</ul>
+		</form>	
+	</div>
+
+	<div ng-show="layout == 'grid'" class="form1">
+		<form >
+
+			<h2> Services </h2>
+			<div class="formContainer">
+			<ul>
+
+				<li ng-repeat="service in services" ng-click="counter(service)" ng-class="{active:service.active}">
+
+					 <a><img class="serviceImg" src= "views/examples/shopCart/pic.jpg" ></a><span class="imgName">
+
+					 	{{ service.name }} </span> <span class="imgValue">{{ service.value | currency}}</span>
+					 
+				</li>
+			</ul>
+			</div>
+		</form>
+	</div>
+
+	<div class="form2">
+
+		<form>
+
+			<h2> Cart - RIP wallet </h2>
+
+			<ul>
+
+				<li ng-repeat="service in services" ng-class="{active:service.active}" ng-click="active()">
+
+					 <p> 
+
+					 		{{ service.name }}
+
+					 		<div class="cartEdit">
+
+								<button class="button" type="button" ng-click="decounter(service)"> - </button>
+
+							 	<input disabled="disabled" placeholder="{{service.count}}" 
+							 	class="placeHolderInput" 
+							 	style="width:50px;text-align: center;color: black;"></input> 
+
+						 		<button class="button" type="button" ng-click="counter(service)"> + </button>
+
+						 			<span class="currencySpace">
+
+						 			{{ service.value * service.count | currency}} 
+
+						 			</span>
+						 	
+					 			<button class="buttonClose" style="float: right; color:#8B0000;" type="button" ng-click="nulify(service)"> x </button>
+
+					 		</div>
+					 </p>		
+				</li>
+			</ul>
+
+			
+			<div class="total">
+
+				<button class="btn btn-s buttonClear" ng-click="clearCart()" type="button"> Clear cart </button>
+				
+				
+				<span>Total: {{ total() | currency }} </span>
+
+			</div>
+
+		</form>
+
+	</div>
+</div>
+	

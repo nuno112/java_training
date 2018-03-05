@@ -1,0 +1,85 @@
+
+
+
+
+body{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: #5e5b64;
+	text-align:center;
+}
+
+a, a:visited {
+	outline:none;
+	color:#389dc1;
+}
+
+a:hover{
+	text-decoration:none;
+}
+
+section, footer, header, aside, nav{
+	display: block;
+}
+
+
+/*-------------------------
+	The order form
+--------------------------*/
+
+
+form{
+	background-color: white; 
+	border-radius: 8px;
+	border: 3px solid #006080;
+	width: 75%;
+	padding: 35px 60px;
+	margin: 80px auto;
+}
+
+form h2{
+	color: #666666;
+	font-size:50px;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: normal;
+	line-height:1;
+	text-shadow:1 3px 0 rgba(0,0,0,0.1);
+}
+
+form ul{
+	list-style:none;
+	color: white;
+	font-size:20px;
+	font-weight:bold;
+	text-align: left;
+	margin:20px 0 15px;
+}
+
+form ul li{
+	padding:20px 30px;
+	background-color:#006080;
+	margin-bottom:8px;
+	box-shadow:0 1px 1px rgba(0,0,0,0.1);
+	cursor:pointer;
+}
+
+form ul li span{
+	float:right;
+}
+
+form ul li.active{
+	background-color:#00ace6;
+}
+
+div.total{
+	border-top:1px solid rgba(255,255,255,0.5);
+	padding:15px 30px;
+	font-size:20px;
+	font-weight:bold;
+	text-align: left;
+	color:#666666;
+	margin-left: 30px;
+}
+
+div.total span{
+	float:right;
+}

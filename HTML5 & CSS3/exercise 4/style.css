@@ -1,0 +1,44 @@
+body {
+	font-family: arial;
+	color: black;
+	font-size: 16px;
+	overflow: hidden;
+}
+
+nav {
+	padding: 20px 0 0 10px;
+	right: 0px;
+	width: 20%;
+	background-color: AliceBlue;
+	height: 100%;
+	position: fixed;
+	border-left: 2px solid black;
+}
+
+nav br {
+	line-height: 15;
+}
+
+main h1,h2 {
+	margin-right: 20%;
+	text-align: center;
+}
+
+main br {
+	line-height: 2;
+}
+
+main a {
+	text-decoration: none;
+	color: black;
+}
+
+.date {
+	font-weight: bold;
+	padding-right: 50px;
+	width: 100px;
+}
+.description {
+	text-align: left;
+	font-weight: normal;
+}

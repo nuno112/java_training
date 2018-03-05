@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--João Nuno Costa  feb 2018-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Contacts</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  </head>
+  <body>
+	<header>
+		<a href="index.html"><img src="images/logo.png"></a>
+		<h1>MyBestCompany</h2>
+	</header>
+	<nav>
+		<ul>
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<li class="dropdown">
+					<a href="javascript:void(0)" class="dropbtn">Services</a>
+					<div class="dropdown-content">
+						<a href="web_dev.html">Web Development</a>
+						<a href="seo.html">SEO</a>
+					</div>
+				</li>
+			</li>
+			<li>
+				<a href="about.html">About</a>
+			</li>
+			<li>
+				<a href="mission.html">Company Mission</a>
+			</li>
+			<li>
+				<a href="contacts.html">Contacts</a>
+			</li>
+		</ul>
+	</nav>
+	<main>
+		<div class="wrap">
+			<img src="images/contacts.jpeg">
+			<div class="info">
+				<div id="phone">
+					<p>1800-666</p>
+				</div>
+				<div id="email">
+					<p>mybestcompany@com.com</p>
+				</div>
+				<div id="address">
+					<p>Best Street - 1337 CodeLand</p>
+				</div>
+			</div>
+		</div>
+		<h2>Contact us through this Form!</h2>
+		<div id="contact_form">
+			<form action="http://vip46.groupehn.com:20003/html/infospost.php" method="POST">
+				<p>Name:</p>
+				<input type="text" name="name" required><br>
+				<p>Email:</p>
+				<input type="email" name="email" required><br>
+				<p>Message:</p>
+				<textarea id="message" type="text" name="message" required rows="5"></textarea><br><br>
+				<input type="submit" value="Send message"><br>
+			</form>
+		</div>
+	</main>
+	
+	<footer>
+		<p>(c) Copyright MyBestCompany 2018</p>
+	</footer>
+  </body>
+</html>

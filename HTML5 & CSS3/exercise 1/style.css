@@ -1,0 +1,43 @@
+header {
+	text-align: center;
+	background-color: yellow;
+}
+main {
+	position:relative;
+}
+aside {
+	float: left;
+}
+#content {
+	width:50%;
+	border-left: 3px solid green;
+	margin-left: 10%;	
+}
+article {
+	margin-left:5px;
+}
+footer {
+	text-align: center;
+}
+time {
+	font-weight: bold;
+}
+
+#last-posts {
+	position: absolute;
+	right: 10%;
+	top: 10%;
+	border: 2px dotted green;
+	text-align: right;
+	padding: 0 10px 20px 10px;
+}
+
+
+#last-posts ul {
+	list-style-type: none;
+}
+aside ul {
+	list-style-type: none;
+	margin: 0;
+	padding:0;
+}

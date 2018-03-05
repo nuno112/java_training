@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+hr{
+  border-top: 2px solid black;
+}
+.solution{
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #FFF4B3;
+}
+</style>
+
+</head>
+<body>
+
+ <div class= "container">
+    <h2 class="page-header">Bootstrap 3 Html exercises!</h2>
+ </div>
+
+
+
+<div class="container">
+
+<!-- EXERCISE 1 TABLES -->
+
+  <ul>
+    <li>1.a) Use a Bootstrap class to style the table properly (with padding and horizontal dividers);</li>
+    <li>1.b) Add zebra-stripes to the table;</li>       
+    <li>1.c) Add borders on all sides of the table and cells;</li>        
+    <li>1.d) Enable a hover state on table rows;</li>        
+    <li>1.e) Make the table more compact by cutting cell padding in half;</li>       
+    <li>1.f) Use contextual classes to add the following:
+      <ul>
+        <li>Green color to the table row containing John. </li>
+        <li>Red color to the table row containing Mary.</li>
+        <li>Orange/Yellow color to the last table row.</li>
+      </ul>
+    </li>       
+ </ul>
+ <br>
+
+
+
+  <table class="table table-bordered table-hover table-condensed">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="success">
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr class="danger">
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr class="warning">
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~SOLUTION~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+  <br>
+  <br>
+  <div class="solution">
+    <p> Your solution must look like this:</p>
+    <img class="img-responsive center-block" src="img/Exercise1.JPG">
+  </div>
+  
+<hr>
+
+
+
+
+
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+
+
+
+
+
+<!--EXERCISES 2 IMAGES -->
+
+  <p> 2.a) Use a Bootstrap class to shape the image to a circle:</p>
+
+  <img src="img/test.jpeg" class="img-circle" alt="Chania" width="460" height="345"><br><br>
+   <br>
+
+   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~SOLUTION~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+  <div class="solution">
+    <p> Your solution must look like this:</p>
+    <img class="img-responsive center-block" src="img/Exercise2a.JPG" class="img">
+  </div>
+
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+  <p>2.b) Add rounded corners to the image:</p>
+  <img src="img/test.jpeg " class="img-rounded" alt="Chania" width="460" height="345"><br><br>
+   <br>
+
+   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~SOLUTION~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+  <div class="solution">
+    <p> Your solution must look like this:</p>
+    <img class="img-responsive center-block" src="img/Exercise2b.JPG">
+  </div>
+
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+  <p>2.c) Shape the image to a thumbnail:</p>
+
+  <img src="img/test.jpeg" class="img-thumbnail" alt="Chania" width="460" height="345"><br><br>
+  <br>
+
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~SOLUTION~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+  <div class="solution">
+    <p> Your solution must look like this:</p>
+    <img class="img-responsive center-block" src="img/Exercise2c.JPG">
+  </div>
+
+  <hr>
+
+
+
+
+
+
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+
+
+
+
+
+<!-- EXERCISE 3 BUTTONS -->
+<p>3.a) Use a Bootstrap class to style the button properly with a red color:</p>
+
+<button type="button" class="btn btn-danger">Button</button><br><br>
+ 
+ <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~SOLUTION~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+  <div class="solution">
+    <p> Your solution must look like this:</p>
+    <img class="img-responsive center-block" src="img/Exercise3a.JPG">
+  </div>
+  <br>
+
+
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+<p>3.b) Change the size of the buttons in the following order: large, medium, small and xsmall:</p>
+
+<button type="button" class="btn btn-lg">Button</button>
+<button type="button" class="btn btn-md">Button</button>
+<button type="button" class="btn btn-sm">Button</button>
+<button type="button" class="btn btn-xs">Button</button><br><br>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~SOLUTION~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  
+  <div class="solution">
+    <p> Your solution must look like this:</p>
+    <img class="img-responsive center-block" src="img/Exercise3b.JPG">
+  </div>
+  <br>
+
+
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+<p>3.c) Use a Bootstrap class to disable the button:</p>
+
+<button type="button" class="btn" disabled = "disabled">Button</button><br><br>
+ 
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~SOLUTION~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+  <div class="solution">
+    <p> Your solution must look like this:</p>
+    <img class="img-responsive center-block" src="img/disabled.gif">
+  </div>
+  <br>
+<hr>
+
+
+
+
+
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+
+
+
+
+
+<!--EXERCISE 4 NAV BAR -->
+<p>4 - Find out why the navbar is not displayed correctly - (Fix it!), and then use a Bootstrap Navbar Class to make the navigation bar black. </p>
+
+
+  <!-- Fill in the classes where there is a # -->
+
+  <nav class="navbar navbar-default" style="background-color: black">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a> <!-- href must be "#" -->
+    </div>
+    <div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li> <!-- href must be "#" -->
+        <li><a href="#">Page 1</a></li> <!-- href must be "#" -->
+        <li><a href="#">Page 2</a></li> <!-- href must be "#" -->
+        <li><a href="#">Page 3</a></li> <!-- href must be "#" -->
+      </ul>
+    </div>
+  </nav>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~SOLUTION~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+  <br>
+  <div class="solution">
+    <p> Your solution must look like this:</p>
+    <img class="img-responsive center-block" src="img/Exercise4.JPG">
+  </div>
+  <br>
+
+<hr>
+
+<div class="clearfix"></div>
+
+
+
+
+
+
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+
+
+
+
+<!-- EXERCISE 5 FORMS -->
+
+<p>5.a) Correct the form using bootstrap. The form must contain a input for email, password, checkbox and Login button, and must look like the presented solution:</p>
+
+<!-- Fill in the classes where there is a # -->
+
+<form role = "form">
+  <div>
+    <label>e</label>
+    <input type="text" class="form-control" placeholder="Add Email">
+  </div>
+  <div>
+    <label>P</label>
+    <input type="email" class="form-control" placeholder="Password">
+  </div>
+  <div>
+    <label>
+      <input type="checkbox"> Remember me!
+    </label>
+    <button type="submit" class="btn btn-default">Login</button>
+  </div>
+</form><br><br>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~SOLUTION~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+  <br>
+  <div class="solution">
+    <p> Your solution must look like this:</p>
+    <img class="img-responsive center-block" src="img/Exercise5a.JPG">
+  </div>
+  <br>
+  <br>
+
+
+
+
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+
+
+<p>5.b) Repeat the previous exercise, but the form must be shown in a line:</p>
+
+<!-- Fill in the classes where there is a # -->
+
+<form class="form-inline">
+  <div class="form-group">
+    <label>e</label>
+    <input type="text" class="form-control" placeholder="Add Email">
+  </div>
+  <div class="form-group">
+    <label>P</label>
+    <input type="email" class="form-control" placeholder="Password">
+  </div>
+  <div class="form-group">
+    <label>
+      <input type="checkbox"> Remember me!
+    </label>
+    <button type="submit" class="btn btn-default">L</button>
+  </div>
+</form><br><br>
+
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~SOLUTION~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+  <br>
+  <div class="solution">
+    <p> Your solution must look like this:</p>
+    <img class="img-responsive center-block" src="img/Exercise5b.JPG">
+  </div>
+  <br>
+  <br>
+
+
+
+
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+
+
+<p>5.c) Correct the form (with bootstrap) where the user choses one of 3 diferent options, and make it look like the presented solution:</p>
+
+
+  <!-- Fill in the classes where there is a # -->
+
+<form>
+  <div class="form-group">
+    <label>Gender</label>
+    <select class="form-control">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="other">Other</option>
+    </select>
+  </div>
+</form>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~SOLUTION~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+  <br>
+  <div class="solution">
+    <p> Your solution must look like this:</p>
+    <img class="img-responsive center-block" src="img/select.gif">
+  </div>
+  <br>
+  <br>
+<hr>
+
+
+
+
+
+
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+
+
+
+
+<!-- EXERCISE 6 DROPDOWN MENU -->
+
+<ul> <li>6.a) Add the required classes and attributes to create a dropdown list of the elements below: </li>
+     <li>6.b) Add a header at the top of the dropdown menu with the text "Header": </li>
+<ul>
+<br>
+
+<!-- Fill in the classes where there is a # -->
+
+<div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" type="button">Dropdown Example
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <!-- Add header here -->
+      <li class="dropdown-header">header</li>
+      <li><a href="#">HTML</a></li> <!-- href must be "#" -->
+      <li><a href="#">CSS</a></li>  <!-- href must be "#" -->
+      <li><a href="#">JavaScript</a></li> <!-- href must be "#" -->
+    </ul>
+</div>
+  <br>
+  <br>
+  <br>
+
+
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~SOLUTION~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+  <br>
+  <div class="solution">
+    <p> Your solution must look like this:</p>
+    <img class="img-responsive center-block" src="img/dropdown.gif">
+  </div>
+  <br>
+</div>
+<hr>
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

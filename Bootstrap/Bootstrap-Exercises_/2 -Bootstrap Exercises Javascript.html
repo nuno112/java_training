@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap 3 Javascript exercises!</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+        <style type="text/css">
+            .solution{
+              padding: 10px;
+              border-radius: 10px;
+              background-color: #FFF4B3;
+            }
+        </style>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!-- JavaScript Part -->
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#modal2-open-btn").click(function(){
+                    $("#modal2").modal("show");   //use the proper bootstrap funtion here
+                });
+
+                $(".modal2-close").click(function(){
+                    $("#modal2").modal("hide");   //use the proper bootstrap funtion here
+                });
+
+
+                $('[data-toggle="tooltip"]').tooltip();   //use the proper bootstrap funtion here
+
+                $('[data-toggle="popover"]').popover();   //use the proper bootstrap funtion here
+            });
+
+
+        </script>
+
+
+    </head>
+    <body>
+
+        
+        <br>
+        
+        <!-- EXERCISE 1 - MODAL THROUGH ATTRIBUTES -->
+
+        <div class="container">
+            <h3>Modal exercises</h3>
+            <p>Use bootstrap attributes on this one.</p>
+            <!-- Button HTML (to Trigger Modal 1) -->
+            <a href="#modal1" class="btn btn-lg btn-primary" data-toggle="modal">Change me to have the modal pop up.</a>
+            
+            <!-- Modal 1 HTML -->
+            <div id="modal1" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" aria-hidden="true" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Step one, done!</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>You can close this modal either using the button on the bottom or the &times; on the top right, make sure both work properly. (FYI you can also just click outside of a modal to have it close.)
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default btn-danger" data-dismiss="modal">Now change me to have this modal close.</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+
+            <br>
+            <br>
+
+        <!-- EXERCISE 2 - MODAL THROUGH JAVASCRIPT -->
+
+            <p>Check the Javascript on top of this code and amend it.</p>
+            <!-- Button HTML (to Trigger Modal 2) -->
+            <a href="#modal2" id="modal2-open-btn" class="btn btn-lg btn-primary">Don't change me but make me interactive.</a>
+            
+            <!-- Modal 2 HTML -->
+            <div id="modal2" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close modal2-close" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">And another one bites the dust!</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>As previously, make sure the &times; on the top right and the button on the bottom of this modal close it. (Remember to do it using JavaScript.)
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default btn-danger modal2-close">Same thing for me to close.</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~SOLUTION~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+            <br>
+            <br>
+            <div class="solution">
+                <p> Your solutions must look like this:</p>
+                <img class="img-responsive center-block" src="img/modal1.gif">
+            </div>
+
+        </div>
+
+        <hr>
+
+
+
+
+
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+
+
+<!-- EXERCISE 3 - TOOLTIPS -->
+
+<div id="tool-tip" class="container">
+  <h3>Tooltip Exercise</h3>
+  <p>Check the JavaScript at the top of the code to make sure these tootips work.</p>
+  <ul class="list-inline">
+    <li><a href="#tool-tip" data-toggle="tooltip" data-placement="top" title="Hooray!">Top</a></li>
+    <li><a href="#tool-tip" data-toggle="tooltip" data-placement="bottom" title="Hooray!">Bottom</a></li>
+    <li><a href="#tool-tip" data-toggle="tooltip" data-placement="left" title="Hooray!">Left</a></li>
+    <li><a href="#tool-tip" data-toggle="tooltip" data-placement="right" title="Hooray!">Right</a></li>
+  </ul>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~SOLUTION~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <br>
+    <br>
+    <div class="solution">
+        <p> Your solutions must look like this:</p>
+        <img class="img-responsive center-block" src="img/tooltips.gif">
+    </div>
+
+</div>
+
+<hr>
+
+
+
+
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+
+<!-- EXERCISE 4 - POPOVERS! -->
+
+<div id="pop-over" class="container">
+  <h3>Popover Exercise</h3>
+  <p>Now ensure these popovers also work.</p>
+  <a href="#pop-over" title="Header" data-toggle="popover" data-content="Some content">Click Me</a><br>
+  <a href="#pop-over" title="Header" data-toggle="popover" data-trigger="hover" data-content="Some content">Hover over me</a>
+
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~SOLUTION~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <br>
+    <br>
+    <div class="solution">
+        <p> Your solutions must look like this:</p>
+        <img class="img-responsive center-block" src="img/popover.gif">
+    </div>
+
+</div>
+
+<br>
+
+    </body>
+</html>

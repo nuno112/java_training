@@ -1,0 +1,76 @@
+<div class="container">
+
+	<div class="form-group">
+		<h2 class="text-center"> Task List </h2>
+		<div style="width: 60%; margin-left: 20%">
+
+			<div class="row">
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+					<button type="button" class="btn btn-s btn-default" style="background-color: #006080" ng-model="searchAddTaskToggle" ng-click="searchBtnToggle()">Switch Mode</button>
+				</div>
+
+				<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+					<input type="text" ng-model="task" class="form-control" ng-keydown="searchEnter()" ng-keyup="captureKeyPress()" placeholder="{{inputPlaceholder}}">
+				</div>
+			</div>
+
+			<span class="label label-default" style="background-color: #00ace6">You are now in {{searchAddTaskToggle}}.</span> <br> Click the button to toggle the input
+			box behaviour between 'Add Task Mode' and 'Filter Task Mode'.
+
+		</div>
+	</div>
+	<div class="list">
+		<ul class="list-group" id="tasklist">
+			<li ng-repeat="singleTask in tasks | filter:{taskName: taskFilter} track by $index" class="list-group-item" ng-hide="singleTask.excludedByFilter">
+
+				<input type="checkbox" class="checkbox-round" ng-model="singleTask.status" ng-Change="checkStatus($index)">
+
+				<span contenteditable="false" ng-model="singleTask.taskName" ng-dblclick="ondblclick($index)" ng-keydown="pressEnterAgain($index)"
+				    ng-blur="disableTaskEdit($index)" class="done-{{singleTask.status}}" style="vertical-align: middle; margin-left: 10px; font-size: 20px; ">
+					{{singleTask.taskName}}
+				</span>
+
+				<button type="button" ng-click="delete($index)" class="close" aria-hidden="true" style="float: right; color: #8B0000; margin-top:2px;">x</button>
+
+			</li>
+		</ul>
+
+		<!-- The next div is an optional input box to filter your tasks. We used ng-hide="true" to hide it from the view. -->
+		<div class="form-group" ng-hide="true">
+			<div style="width: 60%; margin-left: 20%">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<input type="text" ng-model="taskFilter" class="form-control" placeholder="Type here to filter your tasks">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- A Well for the Counter, and buttons-->
+		<div class="well well-sm" style="width: 60%; margin-left: 20%">
+			<div class="row">
+				<!-- A div to position the counter on the First 3 columns of the well-->
+				<div class="col-md-3">
+					<!-- Counter that counts all the active items in the list-->
+					{{counter}} items left!
+				</div>
+				<!-- A div to position the All, Active and Completed filter buttons in the following 6 columns of the well-->
+				<div class="col-md-6">
+					<!-- Button to filter the list with all the items-->
+					<button class="btn btn-default btn-xs" ng-click="applySearchAll()" ng-model="button.all" style="width: 70px;">All</button>
+					<!-- Button to filter the list with all the Active items-->
+					<button class="btn btn-default btn-xs" ng-click="applySearchActive()" ng-model="button.active" style="width: 70px;">Active</button>
+					<!-- Button to filter the list with all the Completed items-->
+					<button class="btn btn-default btn-xs" ng-click="applySearchCompleted()" ng-model="button.completed" style="width: 70px;">Completed</button>
+				</div>
+				<!-- A div to position the delete button in the last 3 columns of the well-->
+				<div class="col-md-3">
+					<!-- Button to remove all the completed items from the list-->
+					<button class="btn btn-default btn-xs" ng-click="deleteAll($index)" ng-model="button.delete">Delete Completed</button>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+</div>

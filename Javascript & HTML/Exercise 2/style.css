@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(100, 103, 240)
+}
+
+.container {
+    position: fixed;
+    margin: 0 0 0 5%;
+    padding: 0.5em;
+    color: rgb(209, 224, 243);
+    font-size: 2em;
+    background-color: rgb(98, 166, 245);
+    width: 400px;
+    height: 700px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 1em;
+}
+
+#rekt {
+    margin: -5px;
+    width: 100%;
+    font-size: 1em;
+    padding: 5px;
+    background-color: rgb(236, 93, 105);
+}

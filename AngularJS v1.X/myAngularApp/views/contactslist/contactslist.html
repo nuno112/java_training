@@ -1,0 +1,60 @@
+<div class="container">
+	<h2 class="text-center">Contacts List</h2>
+	<br>
+	<ul class="bar">
+		<button class="btn" ng-click="switchMode()">Switch Mode</button>
+		<label>You are in {{mode}} mode.</label>
+		<li class="dropdown" style="float:right"> 
+			<a href="javascript:void(0)" class="dropdown-toggle nav-link" data-toggle="dropdown">Search Filters<span class="caret"></span></a>
+			<ul class="dropdown-menu">
+				<li><a class="dropdown-item" href="javascript:void(0)" ng-click="filterMode = 'name'">Name</a></li>
+				<li><a class="dropdown-item" href="javascript:void(0)" ng-click="filterMode = 'email'">Email</a></li>
+				<li><a class="dropdown-item" href="javascript:void(0)" ng-click="filterMode = 'phone'">Phone Number</a></li>
+				<li><a class="dropdown-item" href="javascript:void(0)" ng-click="filterMode = 'zip'">Zip Code</a></li>
+				<li class="dropdown-divider"></li>
+				<li><a class="dropdown-item" href="javascript:void(0)" ng-click="filterMode = ''">Reset Filter</a></li>
+			</ul>
+		</li>
+	</ul>
+	<ul class="contacts">
+		<p style = "text-align: center" ng-show="filterMode !== ''">You are searching by <b>{{filterMode}}</b></p>
+		<label ng-show="mode === 'addContact'">In addContact mode you cand add new contacts or edit stored ones.</label>
+		<label ng-show="mode === 'searchContact'">In searchContact mode you can search the contact list.</label>
+		<li class="input">
+			<input type="text" placeholder="name" ng-model="inputC.name">
+			<input type="text" placeholder="email" ng-model="inputC.email">
+			<input type="text" placeholder="phone" ng-model="inputC.phone">
+			<input type="text" placeholder="zip" ng-model="inputC.zip">
+			<button ng-show="mode === 'addContact'" class="btn" ng-click="addContact()">Add Contact</button>
+			<button ng-show="mode === 'searchContact'" class="btn" ng-click="clearSearch()">Clear Search</button>
+		</li>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-3">
+					<button ng-show="mode === 'addContact'" class="btn btn-info" ng-click="editFlag = !editFlag">Edit Selected Contacts</button>
+				</div>
+				<div class="col-md-2"></div>
+				<div class="col-md-3">
+					<button ng-show="mode === 'addContact'" class="btn btn-danger" ng-click="delete()">Delete Selected Contacts</button>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+		</div>		
+		<li ng-repeat="contact in contacts | orderBy: 'name' | filter: match">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-1">
+						<input type="checkbox" ng-model="contact.status">
+					</div>
+					<div class="col-md-11">
+						<input ng-disabled="(!contact.status) || (!editFlag)" type="text"  ng-model="contact.name">
+						<input ng-disabled="(!contact.status) || (!editFlag)" type="email" ng-model="contact.email">
+						<input ng-disabled="(!contact.status) || (!editFlag)" type="text" ng-model="contact.phone">
+						<input ng-disabled="(!contact.status) || (!editFlag)" type="text" ng-model="contact.zip">
+					</div>
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>

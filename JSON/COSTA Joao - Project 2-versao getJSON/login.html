@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FIFA World Cup Predictions</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="styles/style.css">
+
+	<script  src="https://code.jquery.com/jquery-3.3.1.min.js"  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
+	<script src="scripts/login.js"></script>
+
+</head>
+<body>
+	<div class="grid-container">
+		<header>
+			<h1>FIFA World Cup</h1>
+		</header>
+		<div class="login">
+			<form id="loginForm"action="">
+				<div class="form-group">
+					<input id="loginEmail" class="form-control" type="email" placeholder="Email">
+					<input id="loginPassword" class="form-control" type="password" placeholder="Password">
+				</div>
+				<div class="form-group">
+					<button type="submit" class="btn btn-primary" id="loginButton">Login</button>
+					<a target="popup" href="createaccount.html" class="btn btn-secondary" onclick="window.open('createaccount.html', 'popup', 'width = 600, height = 850'); return false;">Create Account</a>
+				</div>
+			</form>
+		</div>
+		<div class="image">
+			<img class="img-fluid" src="images/login.png" alt="World Cup">
+		</div>
+		<div class="description">
+			<div class="left">
+				<p>This is a Pick'em Game of the FIFA World Cup Russia 2018. Create an account and start predicting!</p>
+			</div>
+			<div class="right">
+				<p>With ultra-responsive design and top-notch functionality, you will never want to leave this website!</p>
+			</div>
+		</div>
+		<footer>
+			<p>This game and the FIFA World Cup is sponsored by Escapes Carvalho</p>
+		</footer>
+	</div>
+	
+</body>
+</html>

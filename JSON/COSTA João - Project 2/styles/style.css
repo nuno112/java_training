@@ -1,0 +1,302 @@
+/*
+
+Styling for login.html
+
+*/
+
+h1 {
+	font-weight: bold;
+}
+
+.grid-container {
+	margin-top: 0px;
+	display: grid;
+	grid-template-areas: "header header"
+						 "login login"
+						 "image image"
+						 "description description"
+						 "footer footer";
+	grid-gap: 20px 50px;
+}
+
+header {
+	padding: 5px;
+	color: #FFD7D7;
+	background-color: #343CE1;
+	width: 100%;
+	grid-area: header;
+	text-align: center;
+}
+
+.login {
+	display: inline-grid;
+	grid-area: login;
+    justify-self: center;
+}
+
+.form-group {
+	min-width: 300px;
+}
+
+.form-group input[type="password"] {
+	margin-top: 10px;
+}
+
+#loginForm a {
+	margin-left: 32%;
+}
+
+.image {
+	grid-area: image;
+}
+
+.description {
+	margin-left: 20px;
+	margin-right: 20px;
+	grid-area: description;
+	display: inline-grid;
+	grid-template-areas: "left right";
+	grid-column-gap: 20px;
+}
+
+.description .left, .right {
+	font-size: 1.5em;
+	padding: 10px;
+	border: 1px solid #CDD6FC;
+	border-radius: 10px;
+	text-align: center;
+}
+
+footer {
+	color: #FFD7D7;
+	font-weight: bold;
+	padding-top: 10px;
+	grid-area:footer;
+	text-align: center;
+	background-color: #343CE1;
+	width: 100%;
+}
+
+
+/*
+
+Styling for createaccount.html
+
+*/
+
+
+.container1 {
+	margin: 0 auto;
+	max-width: 500px;
+}
+
+.container2 {
+	text-align: center;
+}
+
+
+/*
+
+Styling for tournament.html
+
+*/
+
+.menu-grid-container {
+	margin: 10px 5% 0 15%;
+	width: 80%;
+	display: inline-grid;
+	grid-template-rows: 100%;
+	grid-template-columns:  1fr 1fr 1fr 2fr 1fr;
+	grid-column-gap: 20px;
+}
+
+.menu-grid-container button {
+	max-width: 100px;
+}
+
+#userEmail {
+	margin-top: 5px;
+	text-align: right;
+	background-color: #DFDFDF;
+	border-radius: 5px;
+	padding-right: 10px;
+}
+
+.tournament-grid-container {
+	margin: 20px 20px 0 20px;
+	display: grid;
+	grid-template-areas: "groupsLeft elimination groupsRight"
+						 "podium podium podium";
+	grid-columns: 1fr 6fr 1fr; 
+	grid-gap: 10px 10px; 
+}
+
+@media (max-width: 910px) {
+	.tournament-grid-container {
+	grid-template-areas: "groupsLeft groupsRight"
+						 "elimination elimination"
+						 "podium podium";
+	}
+}
+
+.ui-droppable-active {
+  	box-shadow: 0 0 10px rgba(81, 203, 238, 1);
+  	border: 1px solid rgba(81, 203, 238, 1);
+}
+
+.groups-left {
+	height: 700px;
+	grid-area: groupsLeft;
+}
+
+.groups-right {
+	grid-area: groupsRight;
+}
+
+.elimination {
+	grid-area: elimination;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	align-items: center;
+	grid-gap: 100px 0px;
+}
+
+.ro16-left, .ro16-right {
+	display: grid;
+	grid-auto-flow: rows; 
+	grid-row-gap: 100px;
+	grid-row: 1fr 1fr 1fr 1fr;
+}
+
+.ro8-left, .ro8-right {
+	display: grid;
+	grid-rows: 1fr 1fr;
+	grid-row-gap: 285px;
+}
+
+.ro4-left,.ro4-right {
+	display: grid;
+	grid-rows: 1fr;
+}
+
+.r02 {
+	display: grid;
+	grid-rows: 1fr;
+	grid-row-gap: 50px;
+}
+
+.ro2 h2 {
+	text-align: center;
+}
+
+.ro2 br {
+	font-size: 100px;
+}
+
+.match {
+	border: 1px solid black;
+	border-radius: 5px;
+	text-align: center;
+	padding: 0;
+}
+
+.matchNum {
+	border: 1px solid #5bc0de;
+	display:table;
+	margin:0 auto;
+	background-color: #5bc0de;
+	border-radius: 5px;
+	color: white;
+}
+
+.team2{
+	min-height: 25px;
+}
+
+.team1 {
+	min-height: 25px;
+	border-bottom: 1px solid black;
+	padding: 0 2px 0 2px;
+}
+
+.podium {
+	margin: 0 auto;
+	height: 200px;
+	grid-area: podium;
+	display:grid;
+	grid-template-areas: ". first ."
+						 "second first ."
+						 "second first third"
+}
+
+.stand {
+	width: 200px;
+	font-size: 34px;
+	text-align: center;
+	border-radius: 10px; 
+}
+
+.stand span {
+	padding: 5px;
+}
+
+#first {
+	grid-area: first;
+	background-color: #F9D062;
+}
+
+#second {
+	grid-area: second;
+	background-color: #BBB9B9;
+}
+
+#third {
+	grid-area: third;
+	background-color: #CC7E4A;
+}
+
+.groups {
+	display: grid;
+}
+
+.sortable {
+	align-self: center;
+	width: 150px;
+	margin: 0 auto;
+}
+
+.sortable div {
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+}
+
+.groupHeader {
+	text-align: center;
+}
+
+.sortable div:nth-child(1) {
+	border-top: 2px solid black;
+}
+
+.sortable div:nth-child(2) {
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	background-color: #5bc0de;
+	color: white;
+}
+
+.sortable div:nth-child(4) {
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	background-color: #5bc0de;
+	color: white;
+}
+
+.sortable div:nth-child(5) {
+	border-bottom: 2px solid black;
+}
+
+.sortable div span:nth-child(1) {
+	border-right: 2px solid black;
+	padding: 2px;
+}

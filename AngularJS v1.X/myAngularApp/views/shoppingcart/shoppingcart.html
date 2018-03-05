@@ -1,0 +1,48 @@
+<div class="container">
+	<button class="btn btn-list" ng-click="display = 'list'"></button>
+	<button class="btn btn-grid" ng-click="display = 'icons'"></button>
+	<div class="row">
+		<div class ="col-md-8">
+			<div class="" id="icons" ng-show="display == 'icons'">
+				<h2 class="text-center">Services</h2>
+				<ul>
+					<li ng-repeat="service in services" ng-click="plus(service)">
+						<img class="" src="views/shoppingcart/like.png">
+						<p>{{service.name}}</p>
+						<p>{{ service.price | currency }}</p>
+					</li>
+				</ul>
+			</div>
+			<div class="" id="list" ng-show="display == 'list'">
+				<h2 class="text-center">Services</h2>
+				<ul>
+					<li ng-repeat="service in services" ng-click="plus(service)">
+						<span>{{service.name}} </span>
+						<span style="float: right;">{{ service.price | currency }}</span>
+						<br>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<h2><br></h2>
+			<div id="cart">
+				<h2>Cart -RIPerino walleterino</h2>
+				<ul>
+					<li ng-repeat="service in services" ng-show="active(service)">
+						<p>{{service.name}}</p>
+						<button class="btn" ng-click="minus(service)">-</button>
+						<label >{{service.quantity}}</label>
+						<button class="btn" ng-click="plus(service)">+</button>
+						<span>{{service.quantity * service.price | currency}}</span>
+						<button class="btn btn-clear" ng-click="clearS(service)">X</button>
+						<br>
+					</li>
+				</ul>
+				
+				<button class="btn btn-default" ng-click="clearCart()">Clear Cart</button>
+				<p style="display: inline">Total: </p>
+				<span>{{ total() | currency }}</span>
+			</div>
+		</div>
+</div>
